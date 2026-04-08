@@ -1,141 +1,157 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: radial-gradient(circle at top, #1f2a44, #0d1117);
+  color: white;
 }
 
-body{
-    background: #0b0f2a;
-    color: white;
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
 }
 
-.container{
-    width: 90%;
-    margin: auto;
-    padding: 20px;
+.container > .top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
- 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.top-bar > .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.unit-btn{
-    background: #1e2347;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 8px;
-    color: white;
+.top-bar > .units {
+  background: #2e2e4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
 }
 
- 
-h1{
-    text-align: center;
-    margin: 30px 0;
+.container > h1 {
+  text-align: center;
 }
 
- 
-.search-box{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
+.container > .search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
 }
 
-.search-box input{
-    width: 40%;
-    padding: 12px;
-    border-radius: 10px;
-    border: none;
-    background: #1e2347;
-    color: white;
+.search-bar > input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #2e2e4d;
+  color: white;
 }
 
-.search-box button{
-    padding: 12px 20px;
-    border-radius: 10px;
-    border: none;
-    background: #5a6cff;
-    color: white;
-    cursor: pointer;
+.search-bar > button {
+  padding: 10px 15px;
+  border: none;
+  background: #4a6cf7;
+  color: white;
+  border-radius: 10px;
 }
 
- 
-.main-grid{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+.search-bar > i {
+  padding-top: 10px;
+  color: #4a6cf7;
 }
 
- 
-.weather-card{
-    background: linear-gradient(135deg, #5a6cff, #7a5cff);
-    padding: 20px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-.weather-card:hover{
-    transform: scale(1.1);
-
+.container > .main {
+  display: flex;
+  gap: 20px;
 }
 
-.temp{
-    font-size: 40px;
+.main > .left {
+  flex: 2;
 }
 
- 
-.info-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);   
-    gap: 10px;
-    margin: 20px 0;
+.main > .right {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 15px;
 }
 
-.info{
-    background: #1e2347;
-    padding: 15px;
-    border-radius: 10px;
+.left > .main-card {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #4a6cf7, #6a5acd);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
 
-.info span{
-    font-size: 20px;
+.main-card > .temp-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
- 
-.daily-grid{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
+.left > .info-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.day{
-    background: #1e2347;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
+.info-row > .info {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 10px;
 }
 
- 
-.right{
-    background: #1e2347;
-    padding: 15px;
-    border-radius: 15px;
+.left > .days {
+  display: flex;
+  gap: 10px;
 }
 
-.hour{
-    background: #2a2f5a;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+.days > .day {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
 }
-.hour:hover{
-    transform: scale(1.2);
-    
+
+.day > .day-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.day-info > i {
+  font-size: 14px;
+}
+
+.right > .right-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.right-header > select {
+  background: #2e2e4d;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.right > .hour {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
 }
