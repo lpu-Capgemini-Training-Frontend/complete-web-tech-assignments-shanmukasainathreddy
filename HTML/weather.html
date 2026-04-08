@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather UI</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+<div class="container">
+
+ 
+    <header>
+        <h2>☀ Weather Now</h2>
+        <button class="unit-btn">Units ⚙</button>
+    </header>
+
+ 
+    <h1>How’s the sky looking today?</h1>
+
+ 
+    <div class="search-box">
+        <input type="text" placeholder="Search for a place...">
+        <button>Search</button>
+    </div>
+
+    <div class="main-grid">
+
+        <div class="left">
+
+            <div class="weather-card">
+                <div>
+                    <h3>Berlin, Germany</h3>
+                    <p>Tuesday, Aug 5, 2025</p>
+                </div>
+                <div class="temp">20° ☀</div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info">Feels Like <br><span>18°</span></div>
+                <div class="info">Humidity <br><span>46%</span></div>
+                <div class="info">Wind <br><span>14 km/h</span></div>
+                <div class="info">Precipitation <br><span>0 mm</span></div>
+            </div>
+
+ 
+            <div class="daily">
+                <h3>Daily forecast</h3>
+                <div class="daily-grid">
+                    <div class="day">Tue 🌧<br>20° 14°</div>
+                    <div class="day">Wed 🌧<br>21° 15°</div>
+                    <div class="day">Thu ☀<br>24° 14°</div>
+                    <div class="day">Fri ⛅<br>25° 13°</div>
+                    <div class="day">Sat ⛈<br>21° 15°</div>
+                    <div class="day">Sun 🌧<br>25° 16°</div>
+                    <div class="day">Mon 🌫<br>24° 15°</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <h3>Hourly forecast</h3>
+
+            <div class="hour">3 PM ☁ 20°</div>
+            <div class="hour">4 PM ⛅ 20°</div>
+            <div class="hour">5 PM ☀ 20°</div>
+            <div class="hour">6 PM ☁ 19°</div>
+            <div class="hour">7 PM 🌧 18°</div>
+            <div class="hour">8 PM 🌫 18°</div>
+            <div class="hour">9 PM 🌧 17°</div>
+            <div class="hour">10 PM ☁ 17°</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

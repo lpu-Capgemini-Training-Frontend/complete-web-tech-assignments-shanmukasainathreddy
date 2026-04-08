@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #0b0f2a;
+    color: white;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+ 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.unit-btn{
+    background: #1e2347;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+ 
+h1{
+    text-align: center;
+    margin: 30px 0;
+}
+
+ 
+.search-box{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box input{
+    width: 40%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #1e2347;
+    color: white;
+}
+
+.search-box button{
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #5a6cff;
+    color: white;
+    cursor: pointer;
+}
+
+ 
+.main-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+ 
+.weather-card{
+    background: linear-gradient(135deg, #5a6cff, #7a5cff);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.weather-card:hover{
+    transform: scale(1.1);
+
+}
+
+.temp{
+    font-size: 40px;
+}
+
+ 
+.info-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.info{
+    background: #1e2347;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.info span{
+    font-size: 20px;
+}
+
+ 
+.daily-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day{
+    background: #1e2347;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ 
+.right{
+    background: #1e2347;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.hour{
+    background: #2a2f5a;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.hour:hover{
+    transform: scale(1.2);
+    
+}
