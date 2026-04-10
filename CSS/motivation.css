@@ -1,0 +1,115 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BODY GRADIENT */
+body {
+  background: linear-gradient(135deg, #b86adf, #1f3c88, #0f9bff);
+  color: white;
+}
+
+/* NAVBAR */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+/* combinator */
+nav > ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  opacity: 0.8;
+}
+
+/* FLEX GRID */
+.quotes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: #f2f2f2;
+  color: #333;
+  width: 260px;
+  min-height: 150px;
+  padding: 20px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: transform 0.3s;
+}
+
+/* hover */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* combinator */
+.card > p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* author */
+.card span {
+  background: #d9dee5;
+  padding: 8px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #1f3c88;
+}
+
+/* FOOTER */
+footer {
+  margin: 30px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+/* combinator */
+.footer-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
