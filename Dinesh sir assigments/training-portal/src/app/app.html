@@ -1,0 +1,14 @@
+<nav>
+  <select [value]="role" (change)="setRole($event)">
+    <option value="manager">Manager</option>
+    <option value="trainee">Trainee</option>
+  </select>
+
+  <a routerLink="/list">View Trainings</a>
+
+  <a *ngIf="role === 'manager'" routerLink="/add">
+    Add Training
+  </a>
+</nav>
+
+<router-outlet></router-outlet>
