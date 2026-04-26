@@ -1,0 +1,20 @@
+<h2>Upcoming Trainings</h2>
+
+<div class="filters">
+  <input type="text" [(ngModel)]="filterTitle" (input)="onFilterChange()" placeholder="Filter by Title">
+  <input type="text" [(ngModel)]="filterTopic" (input)="onFilterChange()" placeholder="Filter by Topic">
+  <input type="text" [(ngModel)]="filterTrainer" (input)="onFilterChange()" placeholder="Filter by Trainer">
+  <input type="text" [(ngModel)]="filterVenue" (input)="onFilterChange()" placeholder="Filter by Venue">
+  <input type="date" [(ngModel)]="filterStartDate" (change)="onFilterChange()" placeholder="Start Date From">
+  <input type="date" [(ngModel)]="filterEndDate" (change)="onFilterChange()" placeholder="End Date To">
+</div>
+
+<div *ngFor="let t of filteredTrainings; let i = index">
+  <p><b>{{t.title}}</b></p>
+  <p>Topic: {{t.topic}}</p>
+  <p>Trainer: {{t.trainerName}}</p>
+  <p>Date: {{t.startDate}} → {{t.endDate}}</p>
+  <p>Venue: {{t.venue}}</p>
+  <button *ngIf="role === 'manager'" (click)="deleteTraining(i)">Delete</button>
+  <hr>
+</div>

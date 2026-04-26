@@ -1,0 +1,157 @@
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: radial-gradient(circle at top, #1f2a44, #0d1117);
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.container > .top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.top-bar > .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-bar > .units {
+  background: #2e2e4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.container > h1 {
+  text-align: center;
+}
+
+.container > .search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.search-bar > input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #2e2e4d;
+  color: white;
+}
+
+.search-bar > button {
+  padding: 10px 15px;
+  border: none;
+  background: #4a6cf7;
+  color: white;
+  border-radius: 10px;
+}
+
+.search-bar > i {
+  padding-top: 10px;
+  color: #4a6cf7;
+}
+
+.container > .main {
+  display: flex;
+  gap: 20px;
+}
+
+.main > .left {
+  flex: 2;
+}
+
+.main > .right {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.left > .main-card {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #4a6cf7, #6a5acd);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.main-card > .temp-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.left > .info-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.info-row > .info {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.left > .days {
+  display: flex;
+  gap: 10px;
+}
+
+.days > .day {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.day > .day-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.day-info > i {
+  font-size: 14px;
+}
+
+.right > .right-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.right-header > select {
+  background: #2e2e4d;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.right > .hour {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}

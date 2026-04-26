@@ -1,0 +1,27 @@
+<h2>Customer List</h2>
+
+<input 
+  type="text" 
+  placeholder="Search by name..." 
+  [(ngModel)]="searchText"
+  name="searchText"
+/>
+
+<div *ngFor="let customer of paginatedCustomers">
+  <div style="border:1px solid #ccc; margin:10px; padding:10px;">
+    <h3>{{ customer.name }}</h3>
+    <p>Email: {{ customer.email }}</p>
+    <p>Phone: {{ customer.phone }}</p>
+    <p>Address: {{ customer.address }}</p>
+    <p>DOB: {{ customer.dateOfBirth }}</p>
+    <p>Gender: {{ customer.gender }}</p>
+  </div>
+</div>
+
+<button (click)="prevPage()" [disabled]="currentPage === 1">
+  Previous
+</button>
+
+<button (click)="nextPage()" [disabled]="currentPage === totalPages()">
+  Next
+</button>

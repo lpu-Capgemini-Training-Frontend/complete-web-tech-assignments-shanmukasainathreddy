@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <style>
+        *{
+            margin: 4px;
+        }
+        #header{
+            width: 100%;
+            height: 65px;
+            background-color: green;
+            color: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #footer{
+            width: 100%;
+            height: 65px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #main{
+            width: auto;
+            height: 800px;
+        }
+
+        .correct{
+            background-color: green;
+            color: white;
+            display: none;
+        }
+
+        .incorrect{
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        /*right answer */
+        #qno2:checked ~ #corrected1{
+            display: inline;
+        }
+
+        /* worng answer */
+        #qno1:checked ~#incorrected1,
+        #qno3:checked ~#incorrected1,
+        #qno4:checked ~#incorrected1
+        {
+            display: inline;
+        }
+
+        /* correct answer */
+        #qno8:checked ~ #corrected2{
+            display: inline;
+        }
+
+        /* wrong answer */
+        #qno5:checked~#incorrected2,
+        #qno6:checked~#incorrected2,
+        #qno7:checked~#incorrected2
+        {
+            display: inline;
+        }
+
+        section{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+    <h3>Quiz Application</h3>
+    </header>
+
+    <main id="main">
+        <section>
+
+            <h4>Q1:IPL full form?</h4>
+
+            <input type="radio" name="q1" id="qno1">
+            <label for="qno1">International Political Land</label><br>
+
+            <input type="radio" name="q1" id="qno2">
+            <label for="qno2">Indian premier League</label><br>
+            
+            <input type="radio" name="q1" id="qno3">
+            <label for="qno3">Indian Petrol Limited</label><br>
+
+            <input type="radio" name="q1" id="qno4">
+            <label for="qno4">International Professional Learning</label><br>
+
+            <label for="">Your answer is : </label>
+            <p class="correct" id="corrected1">Correct</p>
+            <p class="incorrect" id="incorrected1">Incorrect</p> <hr>
+            <!-- <br> -->
+
+            <h4>Q2:What is the correct time to sleep?</h4>
+
+            <input type="radio" name="q2" id="qno5">
+            <label for="qno5">09:00 AM</label><br>
+
+            <input type="radio" name="q2" id="qno6">
+            <label for="qno6">02:00 AM</label><br>
+            
+            <input type="radio" name="q2" id="qno7">
+            <label for="qno7">06:00 PM</label><br>
+
+            <input type="radio" name="q2" id="qno8">
+            <label for="qno8">09:00 PM</label><br>
+
+            <label for="">Your answer is : </label>
+            <p class="correct" id="corrected2">Correct!</p>
+            <p class="incorrect" id="incorrected2">Incorrect!</p> <hr>
+            <br>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>This is footer</p>
+    </footer>
+</body>
+</html>

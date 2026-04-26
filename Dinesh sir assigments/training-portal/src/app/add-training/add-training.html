@@ -1,0 +1,19 @@
+<h2>Add Training</h2>
+
+<form #trainingForm="ngForm" (ngSubmit)="onSubmit(trainingForm)">
+
+  <input type="text" name="title" ngModel placeholder="Title" required>
+  <input type="text" name="topic" ngModel placeholder="Topic" required>
+  <input type="number" name="maxTrainees" ngModel placeholder="Max Trainees" required>
+
+  <input type="date" name="startDate" ngModel required>
+  <input type="date" name="endDate" ngModel required>
+
+  <input type="text" name="trainerName" ngModel placeholder="Trainer Name" required>
+  <input type="text" name="venue" ngModel placeholder="Venue" required>
+
+  <button type="submit" [disabled]="!trainingForm.valid">
+    Add Training
+  </button>
+
+</form>

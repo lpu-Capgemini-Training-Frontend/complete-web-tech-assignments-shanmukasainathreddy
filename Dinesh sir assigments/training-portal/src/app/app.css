@@ -1,0 +1,60 @@
+nav {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav a, nav select {
+  margin-right: 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: blue;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+input, select, button {
+  margin: 5px 0;
+  padding: 8px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.filters input {
+  flex: 1;
+  min-width: 150px;
+}
+
+div[ngFor] {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+}

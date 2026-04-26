@@ -1,0 +1,160 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="top-bar">
+        <div class="logo"><i class="fa-solid fa-sun"></i> Weather Now</div>
+
+        <select class="units">
+          <option>Units</option>
+        </select>
+      </div>
+
+      <h1>How's the sky looking today?</h1>
+
+      <div class="search-bar">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search for a place..." />
+        <button>Search</button>
+      </div>
+
+      <div class="main">
+        <div class="left">
+          <div class="main-card">
+            <div>
+              <h2>Berlin, Germany</h2>
+              <p>Tuesday, Aug 5, 2025</p>
+            </div>
+
+            <div class="temp-box">
+              <i class="fa-solid fa-sun"></i>
+              <h1>20°</h1>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="info">
+              <p>Feels Like</p>
+              <h3>18°</h3>
+            </div>
+
+            <div class="info">
+              <p>Humidity</p>
+              <h3>46%</h3>
+            </div>
+
+            <div class="info">
+              <p>Wind</p>
+              <h3>14 km/h</h3>
+            </div>
+
+            <div class="info">
+              <p>Precipitation</p>
+              <h3>0 mm</h3>
+            </div>
+          </div>
+
+          <h3 class="section-title">Daily forecast</h3>
+
+          <div class="days">
+            <div class="day">
+              <p>Tue</p>
+              <div class="day-info">
+                <i class="fa fa-cloud"></i>
+                <span>20°</span>
+              </div>
+            </div>
+            <div class="day">
+              <p>Wed</p>
+              <div class="day-info">
+                <i class="fa fa-cloud"></i>
+                <span>21°</span>
+              </div>
+            </div>
+            <div class="day">
+              <p>Thu</p>
+              <div class="day-info">
+                <i class="fa fa-sun"></i>
+                <span>24°</span>
+              </div>
+            </div>
+            <div class="day">
+              <p>Fri</p>
+              <div class="day-info">
+                <i class="fa fa-cloud"></i>
+                <span>23°</span>
+              </div>
+            </div>
+            <div class="day">
+              <p>Sat</p>
+              <div class="day-info">
+                <i class="fa fa-cloud-showers-heavy"></i>
+                <span>21°</span>
+              </div>
+            </div>
+            <div class="day">
+              <p>Sun</p>
+              <div class="day-info">
+                <i class="fa fa-cloud"></i>
+                <span>25°</span>
+              </div>
+            </div>
+            <div class="day">
+              <p>Mon</p>
+              <div class="day-info">
+                <i class="fa fa-smog"></i>
+                <span>24°</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="right-header">
+            <h3>Hourly forecast</h3>
+            <select>
+              <option>Tuesday</option>
+            </select>
+          </div>
+
+          <div class="hour">
+            <span><i class="fa fa-cloud"></i> 3 PM</span> <span>20°</span>
+          </div>
+          <div class="hour">
+            <span><i class="fa fa-cloud"></i> 4 PM</span> <span>20°</span>
+          </div>
+          <div class="hour">
+            <span><i class="fa fa-sun"></i> 5 PM</span> <span>20°</span>
+          </div>
+          <div class="hour">
+            <span><i class="fa fa-cloud"></i> 6 PM</span> <span>19°</span>
+          </div>
+          <div class="hour">
+            <span><i class="fa fa-cloud"></i> 7 PM</span> <span>18°</span>
+          </div>
+          <div class="hour">
+            <span><i class="fa fa-cloud-rain"></i> 8 PM</span> <span>18°</span>
+          </div>
+          <div class="hour">
+            <span><i class="fa fa-cloud"></i> 9 PM</span> <span>17°</span>
+          </div>
+          <div class="hour">
+            <span><i class="fa fa-cloud"></i> 10 PM</span> <span>17°</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
